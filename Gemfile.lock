@@ -1,0 +1,64 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.6.0)
+      public_suffix (>= 2.0.2, < 4.0)
+    ast (2.4.0)
+    aws-eventstream (1.0.3)
+    aws-partitions (1.182.0)
+    aws-sdk-core (3.57.0)
+      aws-eventstream (~> 1.0, >= 1.0.2)
+      aws-partitions (~> 1.0)
+      aws-sigv4 (~> 1.1)
+      jmespath (~> 1.0)
+    aws-sdk-route53 (1.26.0)
+      aws-sdk-core (~> 3, >= 3.56.0)
+      aws-sigv4 (~> 1.1)
+    aws-sigv4 (1.1.0)
+      aws-eventstream (~> 1.0, >= 1.0.2)
+    diffy (3.3.0)
+    dnsruby (1.61.2)
+      addressable (~> 2.5)
+    hashie (3.6.0)
+    jaro_winkler (1.5.3)
+    jmespath (1.4.0)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
+    parallel (1.17.0)
+    parser (2.6.3.0)
+      ast (~> 2.4.0)
+    public_suffix (3.1.1)
+    rainbow (3.0.0)
+    roadworker (0.5.12)
+      aws-sdk-route53 (>= 1.22.0)
+      diffy
+      dnsruby
+      hashie
+      systemu
+      term-ansicolor
+      uuid
+    rubocop (0.72.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    ruby-progressbar (1.10.1)
+    systemu (2.6.5)
+    term-ansicolor (1.7.1)
+      tins (~> 1.0)
+    tins (1.20.3)
+    unicode-display_width (1.6.0)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  roadworker
+  rubocop
+
+BUNDLED WITH
+   2.0.2
