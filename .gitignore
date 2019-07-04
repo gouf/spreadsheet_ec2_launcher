@@ -1,3 +1,7 @@
+additional_records.csv
+aws_ec2_boot_config.yml
+credentials.json
+token.yaml
 
 # Created by https://www.gitignore.io/api/vim,macos,ruby
 # Edit at https://www.gitignore.io/?templates=vim,macos,ruby
