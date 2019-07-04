@@ -1,0 +1,11 @@
+# vim: ft=ruby
+hosted_zone "izr.mobi." do
+<% @additional_records_set.each do |record| %>
+  rrset "<%= record.rrset %>", "A" do
+    ttl <%= record.ttl %>
+    resource_records(
+      <%= record.resource_records.map {|r| "\"#{r}\""}.join("\n") %>
+    )
+  end
+<% end %>
+end
