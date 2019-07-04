@@ -1,0 +1,14 @@
+image_id: 'ami-0c3fd0f5d33134a76'
+min_count: 1
+max_count: 1
+key_name: 'my_key_name'
+security_group_ids:
+  - 'sg-abcdef00000000000'
+user_data: <%= ENV['EC2_ENCODED_SCRIPT'] %> # Base64 encoded shell script
+instance_type: 't2.micro'
+placement:
+  availability_zone: 'ap-northeast-1a'
+subnet_id: 'subnet-abcdef00000000000'
+# iam_instance_profile: {
+#   arn: 'arn:aws:iam::' + 'ACCOUNT_ID' + ':instance-profile/aws-opsworks-ec2-role'
+# }
