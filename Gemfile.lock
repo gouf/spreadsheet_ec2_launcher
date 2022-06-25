@@ -766,7 +766,7 @@ GEM
     concurrent-ruby (1.1.5)
     declarative (0.0.10)
     declarative-option (0.1.0)
-    diffy (3.3.0)
+    diffy (3.4.2)
     dnsruby (1.61.2)
       addressable (~> 2.5)
     faraday (0.15.4)
